@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard  </title>
+</head>
+<h1>Welcome to Jimmy's dashboard! </h1>
+<body>
+  <script>
+  {% include "dashboard/dashboard.js" %}
+  </script>
+  <h3>Enter the values for the following:</h3>
+
+  TEMPERATURE:
+  <p>
+    <input id = "temperature" name = "temperature" type = "number"></input>
+  </p>
+  PRESSURE:
+  <p>
+    <input id = "pressure" name = "pressure" type = "number"></input>
+  </p>
+  CO2:
+  <p>
+    <input id = "co2" name = "co2" type = "number"></input>
+  </p>
+  TVOC:
+  <p>
+    <input id = "tvoc" name = "tvoc" type = "number"></input>
+  </p>
+  HUMIDITY:
+  <p>
+    <input id = "humidity" name = "humidity" type = "number"></input>
+  </p>
+
+  <p>
+    <button type = button onclick = "onDashboardClick();">Get the Average</button>
+  </p>
+
+  The Average is:
+  <p id = "temp_average" name = "temp_average" type = "number">TEMPERATURE</p>
+  <p id = "press_average" name = "press_average" type = "number">PRESSURE</p>
+  <p id = "co2_average" name = "co2_average" type = "number">CO2</p>
+  <p id = "tvoc_average" name = "tvoc_average" type = "number">TVOC</p>
+  <p id = "humidity_average" name = "humid_average" type = "number">HUMIDITY</p>
+
+
+</body>
+</html>

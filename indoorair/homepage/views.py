@@ -11,6 +11,26 @@ def index_page(request):
 
     return render(request, 'homepage/index.html', context)
 
+def login(request):
+
+
+    context = {
+        'login' :77777,
+
+    }
+
+    return render(request, 'gateway/login.html', context)
+
+def register(request):
+
+
+    context = {
+        'register' :55555,
+
+    }
+
+    return render(request, 'gateway/register.html', context)
+
 
 
 def contact_page(request):
@@ -22,6 +42,8 @@ def contact_page(request):
     }
 
     return render(request, 'homepage/contact.html', context)
+
+
 
 def post_version_api(request):
     return JsonResponse({

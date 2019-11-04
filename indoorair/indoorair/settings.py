@@ -31,6 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'profilebyjimmy.apps.ProfilebyjimmyConfig',
+    'instrument.apps.InstrumentConfig',
+    'dashboard.apps.DashboardConfig',
+    'gateway.apps.GatewayConfig',
     'homepage.apps.HomepageConfig',
     'django.contrib.admin',
     'django.contrib.auth',
