@@ -16,7 +16,7 @@ def register_page(request):
   }
   return render(request, "gateway/register.html", context)
 
-def register_success(request):
+def register_success_page(request):
   return render(request, "gateway/register_success.html", {})
 
 def post_login_api(request):

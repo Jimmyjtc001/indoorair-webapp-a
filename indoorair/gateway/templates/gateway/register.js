@@ -28,8 +28,7 @@ function onRegisterClick() {
 function onLogoutClick() {
   var xhttp = new XMLHttpRequest();
    xhttp.onreadystatechange = function() {
-       if (this.readyState == 4 && this.status == 200) { // Thisis the callback function
-           // Get the string data that the server sent us.
+       if (this.readyState == 4 && this.status == 200) { 
         const loginObject = JSON.parse(this.responseText);
         if(loginObject.was_successful === true){
           window.location.href = "{% url 'login_page' %}";
